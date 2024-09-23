@@ -10,6 +10,6 @@ The goal of this project is to create a structured, single-page CV using only HT
 - Favicon: Add a favicon for your CV page.
 
 ### URL's project
-- link : https://github.com/Ayendev/Roadmap/Frontend/Single-Page-Cv
+- link : https://roadmap.sh/projects/single-page-cv
 
 
