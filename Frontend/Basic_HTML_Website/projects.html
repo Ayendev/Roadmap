@@ -9,27 +9,37 @@
     <meta name="keyword" content="HTML">
     <!-- OG -->
     <meta property="og:title" content="Basics HTML Website - projects">
-
+    <!-- Style Links -->
+    <link rel="Stylesheet" href="Style.css">
+    <!-- Fonts Titillium for logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <title>Projects</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="header_left">
             <img src="" alt="">
             <h3>AyenDev</h3>
         </div>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="articles.html">Articles</a></li>
+        <nav class="header_right">
+            <ul class="navbar">
+                <li><a class="end_slash" href="homepage.html">Home</a></li>
+                <li><a class="end_slash" href="#">Projects</a></li>
+                <li><a class="end_slash" href="articles.html">Articles</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section >
+            <div id="projects_show" class="range_">
             <h3>Projects</h3>
             <ul>
                 <li><a>HTML Only Portofolio</a></li>
@@ -43,7 +53,7 @@
                 <li><a>MessExpress</a></li>
                 <li><a>Ecohub</a></li>
             </ul>
-
+            </div>
         </section>
     </main>
     <footer>

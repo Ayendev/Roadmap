@@ -23,4 +23,5 @@ The website should have following pages:
 ### URL's project
 - link : https://roadmap.sh/projects/basic-html-website
 
-
+### Adding Style
+Adding style.css file to style this basic HTMl Website
