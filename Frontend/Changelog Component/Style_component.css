@@ -1,0 +1,153 @@
+:root {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 100px auto;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+.title{
+
+    margin-bottom: 30px;
+    text-align: center;
+}
+.title h3 {
+    font-size: 30px;
+    line-height: 4rem;
+}
+.title p{
+    font-size: 13px;
+}
+
+#component{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    border: 1px solid #001219;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.marked_date{
+    padding: 20px 35px 20px 0;
+    text-align: center;
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.55);
+    flex-basis: 300px;
+}
+
+
+.description{
+    padding: 20px 0 20px 15px;
+    position: relative;
+    border-inline-start: 2px solid #8b989a;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    flex-basis: 500px;
+}
+
+.description::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #23d7ef;
+    z-index: 1;
+    left: -8px;
+    top: 22px;
+}
+
+
+.act_history{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*align-items: flex-start;*/
+    align-content: center;
+    justify-content: center;
+    height: auto;
+
+}
+
+.act_view{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    padding: 10px;
+    background-color: #235def;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    color: #f8f9fa;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), -2px -2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 500px) {
+    .act_history{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        border-inline-start: 2px solid #8b989a;
+    }
+
+    .marked_date{
+        text-align: start;
+        padding: 0 0 10px 10px;
+        font-weight: 500;
+        font-size: 15px;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+        flex-basis: auto;
+
+    }
+
+    .description{
+         border: none;
+        font-weight: normal;
+        font-size: 15px;
+        font-style: normal;
+        color: rgba(0, 0, 0, 0.8);
+        flex-basis: auto;
+    }
+
+    .description::before{
+        background-color: #235def;
+    }
+
+}
