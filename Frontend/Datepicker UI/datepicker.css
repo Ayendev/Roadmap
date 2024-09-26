@@ -1,0 +1,174 @@
+*,*:before,*:after{box-sizing:border-box;}
+
+:root {
+   font-family: "Roboto Serif", serif;
+   font-optical-sizing: auto;
+   /*font-weight: <weight>;
+   font-style: normal;
+   font-variation-settings:
+       "wdth" 100,
+       "GRAD" 0;*/
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.container{
+   margin: 0;
+   width: 350px;
+   height: auto;
+   padding: 0;
+   translate: 0 50%;
+   box-sizing: border-box;
+   position: relative;
+
+}
+
+.picker_header, .picker_body{
+   border: 2px #020202 solid;
+}
+
+.picker_header{
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2px;
+
+}
+
+input,button{
+   box-shadow: none;
+   border-radius: 0;
+   outline: none;
+   border: none;
+}
+
+input{
+   width: calc(100% - 15%);
+   height: 40px;
+   padding: 11px;
+}
+
+input[placeholder]{
+   font-style: oblique;
+   font-size: 14px;
+}
+
+button{
+   width: 15%;
+   height: 40px;
+   padding: 5px;
+   border-left: 2px solid #000000;
+   background-color: transparent;
+
+}
+
+.dateIcon{
+   object-fit: contain;
+   width: 25px;
+   height: 25px;
+}
+
+.picker_body{
+   position: absolute;
+   width: 100%;
+   padding: 10px;
+}
+
+
+.picker_body p{
+   vertical-align: center;
+   text-align: center;
+   font-weight: 400;
+   line-height: 1rem;
+   color: #006d77;
+}
+
+.arrow_left, .arrow_right{
+   padding: 0 20px 0 20px;
+   font-weight: bolder;
+   font-size: 20px;
+   color: #e01c50;
+}
+
+.arrow_left{
+   float: left;
+}
+.arrow_right{
+   float: right;
+}
+
+.picker_days{
+   width: 100%;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.picker_days li{
+   margin: 5px 10px;
+   font-weight: 600;
+   font-size: smaller;
+   width: 42px;
+   text-align: center;
+   vertical-align: center;
+}
+
+.view_date{
+   position: relative;
+   width: 100%;
+}
+
+.view_date_ordered{
+   padding: 5px;
+   width: 100%;
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-start;
+   margin: 0 auto;
+}
+
+
+.day {
+   padding: 0px;
+   font-weight: 400;
+   font-size: 1rem;
+   height: 45px;
+   width: 45px;
+  /*padding: 15px 15px 14px 15px;*/
+   text-align: center;
+   position: relative;
+
+}
+
+.day::after{
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 0;
+   border: 1px solid rgba(0, 0, 0, 0.75);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   height: 42px;
+   width: 42px;
+   z-index: -1;
+}
