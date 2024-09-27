@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta data for SEO -->
+  <meta name="author" content="Ayendev">
+  <meta name="keywords" content="HTML,CSS,LAYOUT,ACCESSIBLE FORM">
+  <meta name="description" content="Create an accessible form UI using HTML and CSS">
+  <!-- meta data for sharing -->
+  <meta property="og:title" content="Accessible Form UI">
+  <meta property="og:url" url="https://roadmap.sh/projects/accessible-form-ui">
+  <!-- Style -->
+  <link rel="stylesheet" href="FormUi.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+  <title>ACCESSIBLE FORM UI</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="form">
+      <form>
+        <div class="form_group">
+          <label for="user_fullname">Full Name</label>
+          <input id="user_fullname" name="fullname" type="text" placeholder="Enter you full name" required aria-required="true">
+        </div>
+        <div class="form_group">
+          <label for="user_email">Email</label>
+          <input id="user_email" name="email" type="email" class="error" placeholder="john@doe.com" required>
+          <p class="error_message">Email is already taken</p>
+        </div>
+        <div class="form_group">
+          <label for="user_password">Enter Password</label>
+          <input id="user_password" name="password" type="password" placeholder="xxxxxxx">
+          <button type="button" class="eye visible"><img src="./images/oeil.png"></button>
+        </div>
+        <div class="form_group">
+          <label for="user_c_password">Confirm Password</label>
+          <input id="user_c_password" name="c_password" type="password" placeholder="xxxxxxx">
+          <button type="button" class="eye hide"><img src="./images/cacher.png"></button>
+        </div>
+        <div class="form_button">
+          <button type="submit" name="upadte_profile">Update Profile</button>
+        </div>
+      </form>
+    </div>
+    <div class="scalable">
+      <div class="percent">
+        <span>65%</span>
+      </div>
+      <p>Profil Completeness</p>
+      <div class="card">
+        <ul>
+          <li class="barred">Create Account</li>
+          <li class="barred">Update Roadmap Progress</li>
+          <li class="barred">Setup Public Profile</li>
+          <li>Complete your firdt project</li>
+          <li>Invite your Friends</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
