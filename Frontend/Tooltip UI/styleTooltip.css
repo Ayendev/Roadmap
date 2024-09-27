@@ -1,0 +1,111 @@
+body{
+    background-color: #f3f0f0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(16, 41, 103, 0.68);
+    border-radius: 20px;
+    /*border: 1px solid black;
+    clip-path: inset(5px 5px 5px 5px round 30px);
+    background-color: #ef233c;*/
+}
+
+.content{
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    position: relative;
+
+}
+
+.tooltip .text {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    width: max-content;
+    background-color: #0c0b0b;
+    border-radius: 15px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 125%;
+    font-weight: 500;
+    font-size: 0.80rem;
+    line-height: 1rem;
+
+}
+
+
+.tooltip:hover .text {
+    visibility: visible;
+    opacity: 1;
+    /*display: inline;
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 0.5s;
+    background-color: #1b4332;
+    text-align: center;
+    border-radius: 15px;
+    padding: 8px;*/
+}
+
+.tooltip .text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5%;
+    margin-right: -5%;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent; ;
+}
+
+
+.link::after{
+    content: "";
+    /*left: 120%;*/
+    left: 125%;
+    top: 40%;
+    position: absolute;
+    padding: 3px;
+    background: rgba(182, 175, 175, 0.75);
+    border-radius: 50%;
+    transform: translateX(50%);
+}
