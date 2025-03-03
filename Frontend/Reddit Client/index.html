@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="reddit.css">
+</head>
+<body>
+    <div class="main">
+        <div class="actions">
+            <button class="btn">+</button>
+            <dialog id="Dialog">
+                <button id="close" formmethod="dialog">X</button>
+                <form method="dialog">
+                    <div class="input_group">
+                        <label>Enter the name of subredit</label>
+                        <input id="input_field" name="request" type="text" required>
+                    </div>
+
+                    <button id="submit" type="submit">Add a subreddit</button>
+                </form>
+            </dialog>
+        </div>
+        <div class="content_area">
+            <p  class="api_sources"><span id="subreddit">/r/learningProgram</span> <button  class="btn_options">...</button></p>
+            <div id="dropdown"  class="options">
+                <ul class="list_options">
+                    <li><button id="refresh">Refresh</button></li>
+                    <li><button id="delete">Delete</button></li>
+                </ul>
+            </div>
+            <p class="status mask"></p>
+        </div>
+    </div>
+
+    <script src="reddit.js"></script>
+</body>
+</html>
